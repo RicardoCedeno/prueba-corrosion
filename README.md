@@ -1,27 +1,22 @@
-# CoursesFrontend
+# Proyecto
+El proyecto fue realizado usando angular para frontend, spring boot para backend y postgresql como base de datos
+# Componentes
+El proyecto cuenta con 5 componentes
+*Courses: Muestra todos los cursos disponibles
+*individual-course: Muestra detalles de cada curso al hacer click sobre cualquiera de ellos
+*courses-categories: Permite filtrar cursos por categorías, usando spring boot para generar el listado de cursos de cada categoría
+*Register: Permite registrarse usando una dirección de correo que puede o no ser existente y una contraseña o a través de google
+* login: Permite ingresar con los datos de registro para ver los detalles de los cursos
+*add-course: Permite agregar cursos usando un formulario hecho en angular y spring boot para guardar los datos en postgres
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+# Servicios
+El proyecto cuenta con dos servicios, uno para gestionar los cursos, en donde se encuentran los métodos get y post otro para gestionar los usuarios, el cual usa firebase para el registro y autenticación de usuarios.
 
-## Development server
+# Diseño
+El proyecto es responsivo, por lo que cuenta con vista para mobil(<600px), tablets(<1000px) y equipos(>=1000px). Se usó lenguaje scss e imágenes tomadas de flaticon.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#Demostración
+A continuación se deja un video de muestra de la aplicación funcionando:
+https://www.youtube.com/watch?v=-1fyINoBXsw
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
