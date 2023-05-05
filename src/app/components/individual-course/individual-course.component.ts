@@ -26,7 +26,7 @@ export class IndividualCourseComponent implements OnInit {
     this.nameCourse=this.router.snapshot.paramMap.get('nameCourse')
     this.courseService.getACourse(this.nameCourse).subscribe(data=>{
       this.course=data;
-      console.log(this.course)
+      console.log(data)
     })
   }
 

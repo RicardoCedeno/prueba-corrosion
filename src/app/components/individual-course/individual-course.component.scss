@@ -46,3 +46,17 @@
 body{
     background: var(--primary-color);
 }
+
+@media screen and (min-width: 600px){
+    .image-container{
+        max-width: 30vw;
+        filter: drop-shadow(20px 8px 4px #393838);
+        border: 1px solid var(--secondary-color);
+        padding: 50px 50px 50px 50px;
+        border-radius: 500px;
+    }
+
+    .div__body--text, .div__body--content-course, .div__body--information, .div__body--message{
+        font-size: 24px;
+    }
+}

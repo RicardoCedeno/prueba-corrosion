@@ -20,7 +20,7 @@ section{
 
     select{
         font-size: 24px;
-        width: 60vw;
+        width: 30vw;
         border: 1px solid var(--secondary-color);
     }
 }
@@ -93,12 +93,7 @@ section{
         font-size: 26px;
     }
 
-    .section1__select--options{
-        select{
-            width: 40vw;
-        }
-    }
- 
+  
 
 }
 
@@ -123,12 +118,6 @@ section{
 
     .section2--div__nameCourse{
         font-size: 28px;
-    }
-
-    .section1__select--options{
-        select{
-            width: 30vw;
-        }
     }
 
 }

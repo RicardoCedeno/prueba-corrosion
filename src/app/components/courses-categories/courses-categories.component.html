@@ -13,9 +13,9 @@
             <div class="section1__header--subtitle">Elige entre todos nuestros cursos para aprender desde cero todo lo que te interesa y siempre has querido aprender</div>
         </div>
         <div class="section1__select--options">
-            <select name="selectedElement" id="" [(ngModel)]="selectedElement" (change)="onOptionSelected($event)">
+            <!-- <select name="selectedElement" id="" [(ngModel)]="selectedElement" (change)="onOptionSelected($event)">
                 <option *ngFor="let element of listElements">{{element}}</option>
-            </select>
+            </select> -->
         </div>
     </section>
 
@@ -25,9 +25,9 @@
                 <div class="div__section2--course" (click)="getNameCourse(course.nameCourse)">
                     <div class="image-container"><img [src]="course.imageCourse" alt=""></div>
                     <div class="section2--div__nameCourse">Curso de {{course.nameCourse}}</div>
-                    <div class="section-2__div--text">Categoría: {{course.categoryCourse}}</div>
-                    <div class="section-2__div--text">Por: {{course.teacherCourse}}</div>
-                    <div class="section-2__div--text">Duración: {{course.hoursCourse}} horas</div>
+                    <div>Categoría: {{course.categoryCourse}}</div>
+                    <div>Por: {{course.teacherCourse}}</div>
+                    <div>Duración: {{course.hoursCourse}} horas</div>
                 </div>
             </div>
         </div>

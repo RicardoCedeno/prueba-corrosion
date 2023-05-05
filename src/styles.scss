@@ -13,3 +13,11 @@
     --font-color:black;
     --border-color:#9b9b9b;
 }
+
+img{
+    cursor: pointer;
+}
+
+button:active{
+    transform: translateY(5px);
+}

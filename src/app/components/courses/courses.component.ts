@@ -14,7 +14,8 @@ export class CoursesComponent implements OnInit {
     this.getCourses()
   }
 
-  listElements=['Todos los cursos','Frontend', 'Backend', 'Ciencia de datos', 'Bases de datos', 'Diseño', 'Inglés']
+  listElements=['Frontend', 'Backend', 'Ciencia de datos', 'Bases de datos', 'Diseño', 'Inglés']
+  selectedElement:string
 
   courses:Course[]=[]
 
@@ -29,6 +30,13 @@ export class CoursesComponent implements OnInit {
     var selectedNameCourse=nameCourse
     console.log(selectedNameCourse)
     this.router.navigate(['cursos', selectedNameCourse])
+  }
+
+  onOptionSelected(event:any){
+    this.selectedElement=event.target.value;
+    console.log(this.selectedElement)
+
+    this.router.navigate(['/cursos/categorias/' + this.selectedElement])
   }
 
 
