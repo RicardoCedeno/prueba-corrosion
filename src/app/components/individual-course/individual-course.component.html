@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div__body--title">{{course.nameCourse}}</div>
+    <div class="image-container"><img [src]="course.imageCourse" alt=""></div>
+    <div class="div__body--text">En este curso aprenderás temas como:</div>
+    <div class="div__body--content-course">{{course.contentCourse}}</div>
+    <div class="div__body--information">El curso tiene una duración de {{course.hoursCourse}} horas, las cuales serán impartidas por {{course.teacherCourse}}</div>
+    <div class="div__body--message">te deseamos éxitos en este curso y seguir aprendiendo para mejorar tus habilidades</div>
+</body>
+</html>
