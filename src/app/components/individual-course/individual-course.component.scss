@@ -1,0 +1,115 @@
+.div__body--title{
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.image-container{
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.div__body--text{
+    color: var(--font-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+.div__body--content-course{
+    color: var(--secondary-color);
+    font-size: 20px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.div__body--information{
+    color: var(--font-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+.div__body--message{
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+body{
+    background: var(--primary-color);
+}
+
+
+button{
+    color: purple;
+    font-weight: 700;
+    cursor: pointer;
+    background: var(--border-color);
+    font-size: 20px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--border-color);
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    top: 10vh;
+    text-align: c;
+}
+
+input{
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-color);
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media screen and (min-width: 600px){
+    .image-container{
+        max-width: 30vw;
+        filter: drop-shadow(20px 8px 4px #393838);
+        border: 1px solid var(--secondary-color);
+        padding: 50px 50px 50px 50px;
+        border-radius: 500px;
+    }
+
+    .div__body--text, .div__body--content-course, .div__body--information, .div__body--message{
+        font-size: 24px;
+    }
+
+    button{
+        width: 30vw;
+    }
+
+    form{
+        width: 40vw;
+    }
+}

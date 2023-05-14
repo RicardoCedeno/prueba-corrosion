@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>Agrega un curso y comprarte lo que sabes con todo el mundo</div>
+    <form action="">
+        <label for="">Nombre del curso</label>
+        <input type="text" name="nameCourse" [(ngModel)]="course.nameCourse">
+
+        <label for="">Categoría del curso</label>
+        <input type="text" name="categoryCourse" [(ngModel)]="course.categoryCourse">
+
+        <label for="">Horas requeridas para el curso</label>
+        <input type="number" name="hoursCourse" [(ngModel)]="course.hoursCourse">
+
+        <label for="">Contenido del curso (separado por comas)</label>
+        <input type="text" name="contentCourse" [(ngModel)]="course.contentCourse">
+
+        <label for="">url de la imagen del curso (se recomienda flaticon)</label>
+        <input type="text" name="imageCourse" [(ngModel)]="course.imageCourse">
+
+        <label for="">Nombre de quien impartirá el curso</label>
+        <input type="text" name="teacherCourse" [(ngModel)]="course.teacherCourse">
+
+        <button (click)="saveCourse()">guardar</button>
+    </form>
+</body>
+</html>

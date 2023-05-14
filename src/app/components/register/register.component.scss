@@ -1,0 +1,63 @@
+form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--border-color);
+    padding-bottom: 20px;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20vh;
+
+}
+
+.div__body--text{
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+input, label, button{
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+input{
+    border: 2px solid var(--secondary-color);
+    height: 40px;
+}
+
+button{
+    color: purple;
+    font-weight: 700;
+    cursor: pointer;
+    background: var(--border-color);
+    font-size: 20px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+body{
+    background: var(--primary-color);
+    height: 100vh;
+}
+
+@media screen and (min-width: 600px){
+    form{
+        width: 80vw;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1000px){
+    form{
+        width: 70vw;
+    }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <ul class="nav__list--options subtitle">
+      <li><a href="" routerLink="cursos">Cursos</a></li>
+      <li><a href="" routerLink="registrarse">Registrarse</a></li>
+      <li><a href="" routerLink="inicio-de-sesion">Iniciar sesión</a></li>
+      <li><a href="" routerLink="agregar-curso">Agregar curso</a></li>
+      <li (click)="onClick()">Cerrar sesión</li>
+    </ul>
+  </header>
+  
+  <router-outlet></router-outlet>
+</body>
+</html>

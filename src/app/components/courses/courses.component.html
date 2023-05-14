@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section section1">
+        <div class="section1__header">
+            <div class="section1__header-title">Cursos online para que te capacites constantemente</div>
+            <div class="section1__header--subtitle">Elige entre todos nuestros cursos para aprender desde cero todo lo que te interesa y siempre has querido aprender</div>
+        </div>
+        <div class="section1__select--options">
+            <select name="selectedElement" id="" [(ngModel)]="selectedElement" (change)="onOptionSelected($event)">
+                <option *ngFor="let element of listElements">{{element}}</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="section section2">
+        <div class="section2__body--courses">
+            <div *ngFor="let course of courses">
+                <div class="div__section2--course" (click)="getNameCourse(course.nameCourse)">
+                    <div class="image-container"><img [src]="course.imageCourse" alt=""></div>
+                    <div class="section2--div__nameCourse">Curso de {{course.nameCourse}}</div>
+                    <div class="section-2__div--text">Categoría: {{course.categoryCourse}}</div>
+                    <div class="section-2__div--text">Por: {{course.teacherCourse}}</div>
+                    <div class="section-2__div--text">Duración: {{course.hoursCourse}} horas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
